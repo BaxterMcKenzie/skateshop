@@ -288,16 +288,6 @@ $(document).ready(function () {
 
   populateCards(products);
 
-  // INTITAILSE MAPBOX
-
-  // Initialise the map
-  const map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v11',
-    center: [174.7762, -41.2865],
-    zoom: 13
-  });
-
   /** SWIPER JS */
 
   const swiper = new Swiper('.swiper', {
@@ -368,7 +358,7 @@ $(document).ready(function () {
     sortbyWidthWide();
   });
 
-  // FILTERING OPTIONS
+  /** ---------- FILTERING OPTIONS */
 
   // Filter by Brand
   const brandFilter = $('#brand-filter');
@@ -407,5 +397,65 @@ $(document).ready(function () {
   priceMax.on('input', function () {
     filterByPrice();
   });
+
+  // ---- END OF FILTERING OPTIONS
+
+  // Array of Wellington-based attractions
+  const shops = [{
+      name: "Dick's Decks Cuba",
+      address: "102 Cuba Street, Te Aro, Wellington 6011",
+      image: "./img/dd1.webp",
+      longitude: 174.77608879280334,
+      latitude: -41.2909277944508
+    },
+    {
+      name: "Dick's Decks Lyall Bay",
+      address: "Airport Retail Park, 2 George Bolt Street, Rongotai, Wellington 6022",
+      image: "./img/dd2.webp",
+      longitude: 174.80269630594262,
+      latitude: -41.325034340814305, 
+    },
+    {
+      name: "Dick's Decks Manners",
+      address: "75 Manners Street, Te Aro, Wellington 6011",
+      image: "./img/dd3.webp",
+      longitude: 174.7770,
+      latitude: -41.2753
+    },
+    {
+      name: "Dick's Decks Newtown",
+      address: "3 Jervois Quay, Wellington, New Zealand",
+      image: "./img/dd4.webp",
+      longitude: 174.78116493935744,
+      latitude: -41.31322929358295,
+    }
+  ];
+
+    // Initialise the map
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [174.7762, -41.2865],
+      zoom: 11.5
+    });
+
+    // Add markers to the map
+    shops.forEach(shop => {
+      // Create a custom marker element using the SVG
+      const el = document.createElement('div');
+      el.className = 'custom-marker';
+      el.innerHTML = `<img src="./img/dd_marker.svg" alt="${shop.name} marker" />`;
+      el.style.width = '50px';
+      el.style.height = '50px';
+
+      // Create the marker using the custom element
+      const marker = new mapboxgl.Marker(el)
+        .setLngLat([shop.longitude, shop.latitude])
+        .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+          .setHTML(`
+          <img src="${shop.image}" alt="${shop.name} image 1">
+          <h3>${shop.name}</h3><p>${shop.address}</p>`))
+        .addTo(map);
+    });
 
 });

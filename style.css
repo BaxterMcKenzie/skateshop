@@ -16,19 +16,27 @@ body {
     justify-content: center;
 }
 
+.logo {
+    width: 20%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
 .header {
     margin: 30px;
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
-
+    position: relative;
+    z-index: 40;
 }
 
 h1 {
     font-family: "Paytone One", sans-serif;
     font-weight: 600;
-    font-size: 140px;
+    font-size: 159px;
     font-style: normal;
     line-height: 120px;
 
@@ -96,10 +104,48 @@ button:hover {
     border: 5px solid pink;
     width: 90%;
     margin-bottom: 50px;
+
+    h1 {
+        margin-bottom: 20px;
+    }
 }
 
 .mapboxgl-canvas {
-    padding-top: 20px;
+    height: 600px;
+}
+
+.mapboxgl-popup-content {
+    background-color: rgb(69, 255, 112);
+
+    img {
+        width: 100%;
+    }
+
+    h3 {
+        font-family: "Paytone One", sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        font-style: normal;
+        color: rgb(0, 0, 0);
+    }
+
+    p {
+        font-family: "Paytone One", sans-serif;
+        font-weight: 200;
+        font-size: 15px;
+        font-style: normal;
+        color: rgb(0, 0, 0);
+    }
+}
+
+.mapboxgl-popup-close-button {
+    font-family: "Paytone One", sans-serif;
+    font-size: 16px;
+    color: rgb(69, 255, 112);
+    background-color: black;
+    padding-top: 2px;
+    border-radius: 20px;
+    border: 2px solid rgb(255, 0, 136);
 }
 
 
@@ -129,11 +175,17 @@ button:hover {
     height: 400px;
 }
 
+.custom-marker img {
+  width: 100%;
+  height: 100%;
+}
+
 /* CARDS */
 
 .results {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    width: 100%;
     gap: 20px;
 }
 
@@ -236,7 +288,7 @@ button:hover {
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 42px;
         line-height: 45px;
     }
 
