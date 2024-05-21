@@ -14,10 +14,65 @@
 </head>
 
 <body>
-    
+
     <div class="header">
         <h1>RICHARD'S <span>DECKS</span></h1>
-        <h1>SKATEBOARD STORE</h1>
+        <h1>SKATE<span class="board">BOARD</span> STORE</h1>
+        <img src="" alt="">
+    </div>
+
+    <div class="button-container">
+        <div>
+            <h2>SORTING <span>DECKS</span>...</h2>
+        </div>
+        <div class="button-holder">
+            <button id="price-low">PRICE LOW</button>
+            <button id="price-high">PRICE HIGH</button>
+            <button id="width-narrow">WIDTH NARROW</button>
+            <button id="width-wide">WIDTH WIDE</button>
+        </div>
+    </div>
+
+    <div class="filter-container">
+        <div>
+            <h2>FILTERING <span>DECKS</span>...</h2>
+        </div>
+        <div class="filter-holder">
+
+            <select name="brand" id="brand-filter" class="full-width-select">
+                <!-- Options for the select & a value -->
+                <option value="">All Brands</option>
+                <option value="Darkstar">Darkstar</option>
+                <option value="Girl">Girl</option>
+                <option value="Deathwish">Deathwish</option>
+                <!-- Add the rest of the options -->
+            </select>
+
+            <select name="priceMin" id="priceMin" class="full-width-select">
+                <!-- Options for the select & a value -->
+                <option value="">Price Min</option>
+                <option value="30">$30</option>
+                <option value="40">$40</option>
+                <option value="50">$50</option>
+                <option value="60">$60</option>
+                <option value="70">$70</option>
+                <option value="80">$80</option>
+                <!-- Add the rest of the options -->
+            </select>
+
+            <select name="priceMax" id="priceMax" class="full-width-select">
+                <!-- Options for the select & a value -->
+                <option value="">Price Max</option>
+                <option value="30">$30</option>
+                <option value="40">$40</option>
+                <option value="50">$50</option>
+                <option value="60">$60</option>
+                <option value="70">$70</option>
+                <option value="80">$80</option>
+                <!-- Add the rest of the options -->
+            </select>
+
+        </div>
     </div>
 
     <div class="container">
@@ -29,7 +84,7 @@
 
     <!-- MAPBOX -->
     <div class="mapcontainer">
-        <h1>STORE LOCATIONS</h1>
+        <h1>STORE <span>LOCATIONS</span></h1>
         <div id="map">
             <!-- Created via JS -->
         </div>
