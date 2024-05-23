@@ -4,7 +4,7 @@ $(document).ready(function () {
   mapboxgl.accessToken = 'pk.eyJ1IjoiY2lhcmFuc2xvdyIsImEiOiJjbHY0ZW91YnYwOGV3MmlwOGQ5b3l3a3J3In0.EFWZEAWA13ehFAw5jdLqJA';
 
   const products = [{
-        brand: 'Darkstar',
+        brand: 'DARKSTAR',
         price: '$49.99',
         name: 'Collapse Pink Deck',
         width: '8.0 x 31.62',
@@ -23,7 +23,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Darkstar',
+        brand: 'DARKSTAR',
         price: '$32.98',
         name: 'Contra Red Deck',
         width: '8.375 x 32.1',
@@ -42,7 +42,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Darkstar',
+        brand: 'DARKSTAR',
         price: '$29.98',
         name: 'Divide Green Deck',
         width: '7.75 x 31.2',
@@ -61,7 +61,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Darkstar',
+        brand: 'DARKSTAR',
         price: '$36.98',
         name: 'General Red Deck',
         width: '8.0 x 31.6',
@@ -80,7 +80,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Girl',
+        brand: 'GIRL',
         price: '$44.98',
         name: 'Geering Out To Lunch',
         width: '8.0 x 31.5',
@@ -99,7 +99,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Girl',
+        brand: 'GIRL',
         price: '$60.00',
         name: 'Pacheco Cut & Paste Deck',
         width: '8.375 x 31.75',
@@ -118,7 +118,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Girl',
+        brand: 'GIRL',
         price: '$60.00',
         name: 'Kennedy Radio Radio Deck',
         width: '8.5 x 31.75',
@@ -137,7 +137,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Girl',
+        brand: 'GIRL',
         price: '$60.00',
         name: 'Kennedy Davis Redacted Deck',
         width: '8.25 x 31.875',
@@ -156,7 +156,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Deathwish',
+        brand: 'DEATHWISH',
         price: '$78.99',
         name: 'Kirby Deathwitch Trials Deck',
         width: '8.25 x 31.5',
@@ -175,7 +175,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Deathwish',
+        brand: 'DEATHWISH',
         price: '$78.99',
         name: 'Yuri Deathwitch Trials Deck',
         width: '8.125 x 31.5',
@@ -194,7 +194,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Deathwish',
+        brand: 'DEATHWISH',
         price: '$69.98',
         name: 'Hayes December 94 Deck',
         width: '8.125 x 31.5',
@@ -213,7 +213,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Deathwish',
+        brand: 'DEATHWISH',
         price: '$78.99',
         name: 'O\'Dwyer Skull Deck',
         width: '8.475 x 31.875',
@@ -232,7 +232,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Baker',
+        brand: 'BAKER',
         price: '$59.98',
         name: 'Beasley Flow State Deck',
         width: '8.0 x 31.5',
@@ -251,7 +251,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Baker',
+        brand: 'BAKER',
         price: '$78.99',
         name: 'Rowan Emergers Deck',
         width: '8.5 x 32',
@@ -270,7 +270,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Baker',
+        brand: 'BAKER',
         price: '$76.99',
         name: 'Brand Logo White Mini Deck',
         width: '7.3 x 29.5',
@@ -289,7 +289,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Baker',
+        brand: 'BAKER',
         price: '$69.98',
         name: 'Brooker Yeller Deck',
         width: '8.25 x 31.875',
@@ -308,7 +308,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Santa Cruz',
+        brand: 'SANTA CRUZ',
         price: '$49.98',
         name: 'Flame Dot Deck',
         width: '8.0 x 31.6',
@@ -327,7 +327,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Santa Cruz',
+        brand: 'SANTA CRUZ',
         price: '$51.95',
         name: 'Winkowski Volcano Deck',
         width: '10.34 x 30.54',
@@ -346,7 +346,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Santa Cruz',
+        brand: 'SANTA CRUZ',
         price: '$78.98',
         name: 'Meek OG Slasher Deck',
         width: '10.1 x 31.13',
@@ -365,7 +365,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Santa Cruz',
+        brand: 'SANTA CRUZ',
         price: '$69.98',
         name: 'Sommer Tattooed VX ES Deck',
         width: '8.25 x 31.8',
@@ -384,7 +384,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Powell Peralta',
+        brand: 'POWELL PERALTA',
         price: '$109.95',
         name: 'Andy Anderson Flight 290 Deck',
         width: '9.13 x 32.8',
@@ -403,7 +403,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Powell Peralta',
+        brand: 'POWELL PERALTA',
         price: '$84.95',
         name: 'Mike Vallely Elephant 09 Camo Deck',
         width: '10"',
@@ -422,7 +422,7 @@ $(document).ready(function () {
         ]
       },
       {
-        brand: 'Powell Peralta',
+        brand: 'POWELL PERALTA',
         price: '$49.95',
         name: 'Skull & Sword Fade Colby Deck',
         width: '8.25 x 31.95',
@@ -441,7 +441,7 @@ $(document).ready(function () {
         ]
       },
       {
-      brand: 'Powell Peralta',
+      brand: 'POWELL PERALTA',
       price: '$99.95',
       name: 'Flight Bones Pink 247 Deck',
       width: '8.0 x 31.45',
@@ -456,6 +456,82 @@ $(document).ready(function () {
         {
           imageName: 'Image 3 Alt',
           imageSrc: './img/pflights.webp',
+        }
+      ]
+    },
+    {
+      brand: 'FLIP',
+      price: '$64.99',
+      name: 'Penny Classic Deck',
+      width: '8.375 x 31.85',
+      image: [{
+          imageName: 'Image 1 Alt',
+          imageSrc: './img/fpennyb.webp',
+        },
+        {
+          imageName: 'Image 2 Alt',
+          imageSrc: './img/fpennyf.webp',
+        },
+        {
+          imageName: 'Image 3 Alt',
+          imageSrc: './img/fpennys.webp',
+        }
+      ]
+    },
+    {
+      brand: 'FLIP',
+      price: '$64.99',
+      name: 'Rabelo Classic Deck',
+      width: '8.13 x 31.85',
+      image: [{
+          imageName: 'Image 1 Alt',
+          imageSrc: './img/frabelob.webp',
+        },
+        {
+          imageName: 'Image 2 Alt',
+          imageSrc: './img/frabelof.webp',
+        },
+        {
+          imageName: 'Image 3 Alt',
+          imageSrc: './img/frabelos.webp',
+        }
+      ]
+    },
+    {
+      brand: 'FLIP',
+      price: '$64.99',
+      name: 'Mountain Spray Crest Yellow Deck',
+      width: '9.0 x 32.57',
+      image: [{
+          imageName: 'Image 1 Alt',
+          imageSrc: './img/fmountb.webp',
+        },
+        {
+          imageName: 'Image 2 Alt',
+          imageSrc: './img/fmountf.webp',
+        },
+        {
+          imageName: 'Image 3 Alt',
+          imageSrc: './img/fmounts.webp',
+        }
+      ]
+    },
+    {
+      brand: 'FLIP',
+      price: '$64.99',
+      name: 'Mountain Crest Red Deck',
+      width: '9.0 x 32.57',
+      image: [{
+          imageName: 'Image 1 Alt',
+          imageSrc: './img/fmountrb.webp',
+        },
+        {
+          imageName: 'Image 2 Alt',
+          imageSrc: './img/fmountrf.webp',
+        },
+        {
+          imageName: 'Image 3 Alt',
+          imageSrc: './img/fmountrs.webp',
         }
       ]
     },
@@ -491,8 +567,8 @@ function populateCards(array) {
                 <div class="card-details">
                     <h3>${array[i].brand}</h3>
                     <h4>${array[i].name}</h4>
+                    <h6> Width: ${array[i].width}</h6>
                     <h5> Price: ${array[i].price}</h5>
-                    <h5> Width: ${array[i].width}</h5>
                 </div>
             </div>
         `

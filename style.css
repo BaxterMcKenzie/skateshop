@@ -17,7 +17,7 @@ body {
 }
 
 .logo {
-    width: 20%;
+    width: 25%;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -26,6 +26,7 @@ body {
 .header {
     margin: 30px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: left;
     justify-content: center;
@@ -42,7 +43,7 @@ h1 {
 
     span {
         color: rgb(255, 0, 136);
-    }
+          }
 }
 
 h2 {
@@ -79,7 +80,7 @@ button, select {
     color: rgb(69, 255, 112);
     background-color: black;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 30px;
     border: 2px solid rgb(255, 0, 136);
     margin-right: 20px;
     margin-bottom: 10px;
@@ -91,6 +92,12 @@ option {
 }
 
 button:hover {
+    color: rgb(255, 0, 136);
+    background-color: white;
+    border: 2px solid rgb(69, 255, 112);
+}
+
+select:hover {
     color: rgb(255, 0, 136);
     background-color: white;
     border: 2px solid rgb(69, 255, 112);
@@ -108,7 +115,7 @@ button:hover {
 }
 
 .mapcontainer {
-    width: 90%;
+    width: 94%;
     margin-bottom: 50px;
 
     h1 {
@@ -116,10 +123,13 @@ button:hover {
     }
 }
 
+.mapboxgl-map {
+    height: 800px;
+}
+
 .mapboxgl-canvas {
     border: black 5px solid;
     border-top-left-radius: 50px;
-    height: 600px;
 }
 
 .mapboxgl-popup-content {
@@ -181,16 +191,20 @@ button:hover {
 }
 
 .swiper-pagination-bullet {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(219, 219, 219);
     width: 10px;
     height: 10px;
+}
+
+.swiper-pagination-bullet:active {
+    background-color: rgb(126, 126, 126);
 }
 
 /* MAPBOX */
 
 #map {
     width: 100%;
-    height: 400px;
+    height: 600px;
 }
 
 .custom-marker img {
@@ -220,7 +234,11 @@ button:hover {
 -webkit-box-shadow: 6px 8px 5px 1px rgba(0, 0, 0, 0.362);
 -moz-box-shadow: 6px 8px 5px 1px rgba(0, 0, 0, 0.362);
     z-index: 30;
+    transition: all 150ms ease-in-out;
+}
 
+.card:hover {
+    transform: scale(1.02);
 }
 
 
@@ -248,29 +266,40 @@ button:hover {
 
     h3 {
         font-family: "Paytone One", sans-serif;
-        font-weight: 400;
+        font-weight: 600;
+        letter-spacing: 1px;
         font-size: 24px;
-        font-style: normal;
-        color: white;
+        color: rgb(255, 255, 255);
     }
 
     h4 {
         font-family: "Paytone One", sans-serif;
-        font-weight: 300;
-        font-size: 16px;
-        font-style: normal;
+        font-weight: 200;
+        letter-spacing: 1px;
+        font-size: 18px;
         color: white;
     }
 
     h5 {
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 500;
-    font-size: 16px;
+    font-weight: 440;
+    font-size: 17px;
     font-style: bold;
     margin-top: 10px;
     color: white;
     }
+
+    h6 {
+        font-family: "Rubik", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-size: 14px;
+        font-style: italic;
+        margin-top: 10px;
+        color: white;
+        margin-top: 8px;
+        }
 }
 
 /* Media Queries */
@@ -301,6 +330,10 @@ button:hover {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+    }
+
+    button, select {
+        margin-left: 0px;
     }
     
 }
